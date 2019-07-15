@@ -1,0 +1,22 @@
+USE [Test]
+GO
+
+/****** Object:  Table [dbo].[tblCoffe]    Script Date: 2019-07-15 11:39:44 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tblCoffe](
+	[CoffeId] [int] NOT NULL,
+	[Name] [varchar](255) NULL,
+	[Price] [float] NULL,
+	[Image] [varbinary](max) NULL,
+	[ImageToBase64] [varchar](max) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[CoffeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
